@@ -40,13 +40,18 @@ Import the project into android studio
 
 find the ``` webScreen.kv ``` activity
 
-Change the url atribute into MainActivity instance
+Change the url myWeb function atribute 
 
 ```kotlin
-  fun main(){
-    var webview: WebView = new WebView("hhtps//:fb.com/agtastudios")
-    
-  }
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        //only you need is change your url bellow
+        myWeb("https://www.android.com/")
+
+
+    }
 ```
 
 
