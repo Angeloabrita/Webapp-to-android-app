@@ -1,16 +1,11 @@
 package com.agtastudios.webapp
 
 import android.content.Intent
-import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
-import android.view.View
-import android.view.WindowManager
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.WindowDecorActionBar
-import androidx.core.content.ContextCompat.startActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -18,28 +13,35 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //change your url
-        myWeb("https://www.android.com/")
-
+        myWeb("https://www.handgun.com.br/")
 
     }
 
-
-
-    fun myWeb( url: String){
-
+    fun myWeb(urls: String) {
         val myWebView: WebView = findViewById(R.id.webview)
-        myWebView.webViewClient = WebViewClient()
 
+        //logical for links on webapp ex: external links open on brower or their apps #fix bug
+        myWebView.webViewClient = object : WebViewClient() {
+            override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
+                    //if the app start with https:// open in webview
+                    if (url != null && url.startsWith("https://")) {
+                        return false
+                    }
+                    else{
+                        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                        view!!.context.startActivity(intent)
+                        return true
 
-        myWebView.loadUrl(url)
+                    }
+                return false
+            }
+
+        }
+        myWebView.loadUrl(urls)
         myWebView.settings.javaScriptEnabled = true
 
-
-
     }
-
 }
-
 
 
 
