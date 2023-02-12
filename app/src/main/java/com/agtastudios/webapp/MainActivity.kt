@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //change your url
-        myWeb("https://www.handgun.com.br/")
+        myWeb("https://www.android.com/")
 
     }
 
