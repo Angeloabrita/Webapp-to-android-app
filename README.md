@@ -12,12 +12,12 @@ This application turn a responsive website into an Android Apk using Android Stu
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://giphy.com/gifs/android-developer-studio-0eCDiyyTUZJ4G3aSyt)
 
 
 ## Next steps
 
-- Splash preview screen
+- Splash preview screen ✔
 - Local storage data
 - Custom 404 and fail network Screen
 
@@ -28,10 +28,10 @@ This application turn a responsive website into an Android Apk using Android Stu
 Clone this project
 
 ```bash
-  git clone https://link-para-o-projeto
+  git clone https://github.com/Angeloabrita/Webapp-to-android-app.git
 ```
-
-Import the project into android studio
+## or
+Import the project into Android Studio
 
 
 ```bash
@@ -47,9 +47,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //only you need is change your url bellow
+        //change your url
         myWeb("https://www.android.com/")
-
 
     }
 ```
@@ -62,7 +61,7 @@ Now do you want to change the project name and icons used in this tutorial. Righ
 
 ## Author
 
-- [@Angelo Abrita](https://www.github.com/octokatherine)
+- [@Angelo Abrita](https://www.linkedin.com/in/angelo-gabriel-tavares-abrita/)
 
 
 
