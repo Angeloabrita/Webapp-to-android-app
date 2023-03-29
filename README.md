@@ -1,7 +1,8 @@
 
+
 # Turn Web to Android App
-[![MIT License](https://shields.io/badge/Licence-MIT-green?badge&style=for-the-badge)](https://choosealicense.com/licenses/mit/)
-[![Android Studio](https://shields.io/badge/Android--Studio-4.8-blue?badge&logo=androidstudio&style=for-the-badge)](https://opensource.org/licenses/)
+[![MIT License](https://shields.io/badge/Licence-MIT-green?badge&style=for-the-badge)](https://choosealicense.com/licenses/mit/)  
+[![Android Studio](https://shields.io/badge/Android--Studio-4.8-blue?badge&logo=androidstudio&style=for-the-badge)](https://opensource.org/licenses/)  
 [![Kotlin](https://shields.io/badge/Kotlin-4.8-yellow?badge&logo=kotlin&style=for-the-badge)](http://www.gnu.org/licenses/agpl-3.0)
 
 
@@ -12,12 +13,12 @@ This application turn a responsive website into an Android Apk using Android Stu
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTMwMjBkMzBkNjBmYTgyYWVhNzEzYWZlNzU3MmRhN2VmZDJiMmM1MiZjdD1n/0eCDiyyTUZJ4G3aSyt/giphy.gif)
 
 
 ## Next steps
 
-- Splash preview screen
+- Splash preview screen ✔
 - Local storage data
 - Custom 404 and fail network Screen
 
@@ -27,32 +28,26 @@ This application turn a responsive website into an Android Apk using Android Stu
 
 Clone this project
 
-```bash
-  git clone https://link-para-o-projeto
-```
+```bash  
+ git clone https://github.com/Angeloabrita/Webapp-to-android-app.git  
+```  
+## or
+Import the project into Android Studio
 
-Import the project into android studio
 
-
-```bash
-  file -> Import
-```
+```bash  
+ file -> Import  
+```  
 
 find the ``` webScreen.kv ``` activity
 
-Change the url myWeb function atribute 
+Change the url myWeb function atribute
 
-```kotlin
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        //only you need is change your url bellow
-        myWeb("https://www.android.com/")
-
-
-    }
-```
+```kotlin  
+class MainActivity : AppCompatActivity() {  
+ override fun onCreate(savedInstanceState: Bundle?) { super.onCreate(savedInstanceState) setContentView(R.layout.activity_main) //change your url myWeb("https://www.android.com/")  
+ }  
+```  
 
 
 ## Change the icons and project name
@@ -62,7 +57,4 @@ Now do you want to change the project name and icons used in this tutorial. Righ
 
 ## Author
 
-- [@Angelo Abrita](https://www.github.com/octokatherine)
-
-
-
+- [Angelo Abrita](https://www.linkedin.com/in/angelo-gabriel-tavares-abrita/) - An Indie App and game developer
